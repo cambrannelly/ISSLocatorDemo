@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD566F5129A9750500B3805B /* ISS_LocatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566F5029A9750500B3805B /* ISS_LocatorApp.swift */; };
+		CD566F5329A9750500B3805B /* ISSLocatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566F5229A9750500B3805B /* ISSLocatorView.swift */; };
+		CD566F5529A9750B00B3805B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD566F5429A9750B00B3805B /* Assets.xcassets */; };
+		CD566F5829A9750B00B3805B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD566F5729A9750B00B3805B /* Preview Assets.xcassets */; };
+		CD566F5F29A9808500B3805B /* ISSLocatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566F5E29A9808500B3805B /* ISSLocatorViewModel.swift */; };
+		CD566F6129A980C700B3805B /* ISSLocatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566F6029A980C700B3805B /* ISSLocatorService.swift */; };
+		CD566F6329A980D700B3805B /* ISSLocatorServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566F6229A980D700B3805B /* ISSLocatorServiceable.swift */; };
+		CD566F6529A9818B00B3805B /* ISSPositionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566F6429A9818B00B3805B /* ISSPositionResponse.swift */; };
+		CD566F6B29A982CB00B3805B /* ISSPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566F6A29A982CB00B3805B /* ISSPosition.swift */; };
+		CD566F7529A986D500B3805B /* NetworkProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CD566F7429A986D500B3805B /* NetworkProvider.m */; };
+		CD566F7B29A98EA600B3805B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566F7A29A98EA600B3805B /* Response.swift */; };
+		CD566F8129AAC82D00B3805B /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566F8029AAC82D00B3805B /* Marker.swift */; };
+		CD566F8329AAD18D00B3805B /* ISSLocationHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566F8229AAD18D00B3805B /* ISSLocationHUD.swift */; };
+		CD566FA729AC027300B3805B /* ISSLocatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566FA629AC027300B3805B /* ISSLocatorViewController.swift */; };
+		CD566FA929AC035A00B3805B /* ISSLocatorViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566FA829AC035A00B3805B /* ISSLocatorViewRepresentable.swift */; };
+		CD566FAB29AC053A00B3805B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566FAA29AC053A00B3805B /* RootView.swift */; };
+		CD566FAD29AC1BA000B3805B /* MKMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566FAC29AC1BA000B3805B /* MKMarker.swift */; };
+		CD566FAF29AC1E3A00B3805B /* SateliteAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566FAE29AC1E3A00B3805B /* SateliteAnnotationView.swift */; };
+		CD566FB429AD285100B3805B /* PulsatingSateliteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD566FB329AD285100B3805B /* PulsatingSateliteView.swift */; };
+		CDCD208029AD8835009F27C1 /* RootButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD207F29AD8835009F27C1 /* RootButtonModifier.swift */; };
+		CDCD208229AD890D009F27C1 /* RotatingSatelite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD208129AD890D009F27C1 /* RotatingSatelite.swift */; };
+		CDCD208429AD95DD009F27C1 /* HUDTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD208329AD95DD009F27C1 /* HUDTextModifier.swift */; };
+		CDCD208729AE5E40009F27C1 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD208629AE5E40009F27C1 /* View+Extensions.swift */; };
+		CDCD208D29AE6E3D009F27C1 /* PulsingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCD208C29AE6E3D009F27C1 /* PulsingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD566F4D29A9750500B3805B /* ISS Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ISS Locator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD566F5029A9750500B3805B /* ISS_LocatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISS_LocatorApp.swift; sourceTree = "<group>"; };
+		CD566F5229A9750500B3805B /* ISSLocatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocatorView.swift; sourceTree = "<group>"; };
+		CD566F5429A9750B00B3805B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD566F5729A9750B00B3805B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD566F5E29A9808500B3805B /* ISSLocatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocatorViewModel.swift; sourceTree = "<group>"; };
+		CD566F6029A980C700B3805B /* ISSLocatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocatorService.swift; sourceTree = "<group>"; };
+		CD566F6229A980D700B3805B /* ISSLocatorServiceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocatorServiceable.swift; sourceTree = "<group>"; };
+		CD566F6429A9818B00B3805B /* ISSPositionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPositionResponse.swift; sourceTree = "<group>"; };
+		CD566F6A29A982CB00B3805B /* ISSPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPosition.swift; sourceTree = "<group>"; };
+		CD566F6F29A9860D00B3805B /* ISS Locator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ISS Locator-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD566F7329A986D500B3805B /* NetworkProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkProvider.h; sourceTree = "<group>"; };
+		CD566F7429A986D500B3805B /* NetworkProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkProvider.m; sourceTree = "<group>"; };
+		CD566F7A29A98EA600B3805B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		CD566F7F29AAC5A200B3805B /* ISS-Locator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ISS-Locator-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CD566F8029AAC82D00B3805B /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		CD566F8229AAD18D00B3805B /* ISSLocationHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocationHUD.swift; sourceTree = "<group>"; };
+		CD566FA629AC027300B3805B /* ISSLocatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocatorViewController.swift; sourceTree = "<group>"; };
+		CD566FA829AC035A00B3805B /* ISSLocatorViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSLocatorViewRepresentable.swift; sourceTree = "<group>"; };
+		CD566FAA29AC053A00B3805B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CD566FAC29AC1BA000B3805B /* MKMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMarker.swift; sourceTree = "<group>"; };
+		CD566FAE29AC1E3A00B3805B /* SateliteAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SateliteAnnotationView.swift; sourceTree = "<group>"; };
+		CD566FB329AD285100B3805B /* PulsatingSateliteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsatingSateliteView.swift; sourceTree = "<group>"; };
+		CDCD207F29AD8835009F27C1 /* RootButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootButtonModifier.swift; sourceTree = "<group>"; };
+		CDCD208129AD890D009F27C1 /* RotatingSatelite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingSatelite.swift; sourceTree = "<group>"; };
+		CDCD208329AD95DD009F27C1 /* HUDTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDTextModifier.swift; sourceTree = "<group>"; };
+		CDCD208629AE5E40009F27C1 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		CDCD208C29AE6E3D009F27C1 /* PulsingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulsingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD566F4A29A9750500B3805B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD566F4429A9750500B3805B = {
+			isa = PBXGroup;
+			children = (
+				CD566F4F29A9750500B3805B /* ISS Locator */,
+				CD566F4E29A9750500B3805B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD566F4E29A9750500B3805B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD566F4D29A9750500B3805B /* ISS Locator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD566F4F29A9750500B3805B /* ISS Locator */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD208529AE5E34009F27C1 /* Extensions */,
+				CD566FB229AD139800B3805B /* ViewControllers */,
+				CD566F7F29AAC5A200B3805B /* ISS-Locator-Info.plist */,
+				CD566F6F29A9860D00B3805B /* ISS Locator-Bridging-Header.h */,
+				CD566F6C29A9853900B3805B /* Networking */,
+				CD566F6929A981AB00B3805B /* Models */,
+				CD566F6829A981A100B3805B /* Services */,
+				CD566F6729A9819700B3805B /* Views */,
+				CD566F6629A9818F00B3805B /* ViewModels */,
+				CD566F5029A9750500B3805B /* ISS_LocatorApp.swift */,
+				CD566F5429A9750B00B3805B /* Assets.xcassets */,
+				CD566F5629A9750B00B3805B /* Preview Content */,
+			);
+			path = "ISS Locator";
+			sourceTree = "<group>";
+		};
+		CD566F5629A9750B00B3805B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD566F5729A9750B00B3805B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD566F6629A9818F00B3805B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CD566F5E29A9808500B3805B /* ISSLocatorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CD566F6729A9819700B3805B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD208B29AE6E08009F27C1 /* SwiftUI */,
+				CDCD208A29AE6DF1009F27C1 /* UIKit */,
+				CDCD207E29AD8823009F27C1 /* Modifiers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD566F6829A981A100B3805B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD566F6029A980C700B3805B /* ISSLocatorService.swift */,
+				CD566F6229A980D700B3805B /* ISSLocatorServiceable.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CD566F6929A981AB00B3805B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD566F6429A9818B00B3805B /* ISSPositionResponse.swift */,
+				CD566F6A29A982CB00B3805B /* ISSPosition.swift */,
+				CD566F8029AAC82D00B3805B /* Marker.swift */,
+				CD566FAC29AC1BA000B3805B /* MKMarker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD566F6C29A9853900B3805B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CD566F7C29A98EB000B3805B /* Provider */,
+				CD566F7A29A98EA600B3805B /* Response.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CD566F7C29A98EB000B3805B /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				CD566F7329A986D500B3805B /* NetworkProvider.h */,
+				CD566F7429A986D500B3805B /* NetworkProvider.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		CD566FB229AD139800B3805B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD566FA629AC027300B3805B /* ISSLocatorViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CDCD207E29AD8823009F27C1 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD207F29AD8835009F27C1 /* RootButtonModifier.swift */,
+				CDCD208329AD95DD009F27C1 /* HUDTextModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		CDCD208529AE5E34009F27C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD208629AE5E40009F27C1 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CDCD208A29AE6DF1009F27C1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CD566FAE29AC1E3A00B3805B /* SateliteAnnotationView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		CDCD208B29AE6E08009F27C1 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				CD566F8229AAD18D00B3805B /* ISSLocationHUD.swift */,
+				CD566FAA29AC053A00B3805B /* RootView.swift */,
+				CD566FA829AC035A00B3805B /* ISSLocatorViewRepresentable.swift */,
+				CD566F5229A9750500B3805B /* ISSLocatorView.swift */,
+				CD566FB329AD285100B3805B /* PulsatingSateliteView.swift */,
+				CDCD208129AD890D009F27C1 /* RotatingSatelite.swift */,
+				CDCD208C29AE6E3D009F27C1 /* PulsingView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD566F4C29A9750500B3805B /* ISS Locator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD566F5B29A9750B00B3805B /* Build configuration list for PBXNativeTarget "ISS Locator" */;
+			buildPhases = (
+				CD566F4929A9750500B3805B /* Sources */,
+				CD566F4A29A9750500B3805B /* Frameworks */,
+				CD566F4B29A9750500B3805B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ISS Locator";
+			productName = "ISS Locator";
+			productReference = CD566F4D29A9750500B3805B /* ISS Locator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD566F4529A9750500B3805B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CD566F4C29A9750500B3805B = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = CD566F4829A9750500B3805B /* Build configuration list for PBXProject "ISS Locator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD566F4429A9750500B3805B;
+			productRefGroup = CD566F4E29A9750500B3805B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD566F4C29A9750500B3805B /* ISS Locator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD566F4B29A9750500B3805B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD566F5829A9750B00B3805B /* Preview Assets.xcassets in Resources */,
+				CD566F5529A9750B00B3805B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD566F4929A9750500B3805B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD566F5329A9750500B3805B /* ISSLocatorView.swift in Sources */,
+				CD566FAD29AC1BA000B3805B /* MKMarker.swift in Sources */,
+				CD566F5129A9750500B3805B /* ISS_LocatorApp.swift in Sources */,
+				CD566F6129A980C700B3805B /* ISSLocatorService.swift in Sources */,
+				CD566F7529A986D500B3805B /* NetworkProvider.m in Sources */,
+				CD566FAB29AC053A00B3805B /* RootView.swift in Sources */,
+				CDCD208029AD8835009F27C1 /* RootButtonModifier.swift in Sources */,
+				CD566FA929AC035A00B3805B /* ISSLocatorViewRepresentable.swift in Sources */,
+				CD566F7B29A98EA600B3805B /* Response.swift in Sources */,
+				CD566FAF29AC1E3A00B3805B /* SateliteAnnotationView.swift in Sources */,
+				CDCD208729AE5E40009F27C1 /* View+Extensions.swift in Sources */,
+				CD566FB429AD285100B3805B /* PulsatingSateliteView.swift in Sources */,
+				CD566F6B29A982CB00B3805B /* ISSPosition.swift in Sources */,
+				CD566F6329A980D700B3805B /* ISSLocatorServiceable.swift in Sources */,
+				CD566F6529A9818B00B3805B /* ISSPositionResponse.swift in Sources */,
+				CD566F5F29A9808500B3805B /* ISSLocatorViewModel.swift in Sources */,
+				CD566F8329AAD18D00B3805B /* ISSLocationHUD.swift in Sources */,
+				CD566F8129AAC82D00B3805B /* Marker.swift in Sources */,
+				CDCD208429AD95DD009F27C1 /* HUDTextModifier.swift in Sources */,
+				CDCD208D29AE6E3D009F27C1 /* PulsingView.swift in Sources */,
+				CD566FA729AC027300B3805B /* ISSLocatorViewController.swift in Sources */,
+				CDCD208229AD890D009F27C1 /* RotatingSatelite.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD566F5929A9750B00B3805B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD566F5A29A9750B00B3805B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD566F5C29A9750B00B3805B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ISS Locator/Preview Content\"";
+				DEVELOPMENT_TEAM = C78ZMY68BN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ISS-Locator-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cam.ISS-Locator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ISS Locator/ISS Locator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD566F5D29A9750B00B3805B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ISS Locator/Preview Content\"";
+				DEVELOPMENT_TEAM = C78ZMY68BN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ISS-Locator-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cam.ISS-Locator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ISS Locator/ISS Locator-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD566F4829A9750500B3805B /* Build configuration list for PBXProject "ISS Locator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD566F5929A9750B00B3805B /* Debug */,
+				CD566F5A29A9750B00B3805B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD566F5B29A9750B00B3805B /* Build configuration list for PBXNativeTarget "ISS Locator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD566F5C29A9750B00B3805B /* Debug */,
+				CD566F5D29A9750B00B3805B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD566F4529A9750500B3805B /* Project object */;
+}
